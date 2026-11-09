@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Converter</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main class="converter">
+    <h1>Time Converter</h1>
+    <p class="description">
+      Convert time between seconds, minutes, hours and days.
+    </p>
+
+    <div class="form-group">
+      <label for="time-value">Enter time</label>
+      <input
+        type="number"
+        id="time-value"
+        placeholder="Enter a number"
+        min="0"
+      >
+      <p class="error-message" id="time-error"></p>
+    </div>
+
+    <div class="unit-selectors">
+      <div class="form-group">
+        <label for="from-unit">From</label>
+        <select id="from-unit">
+          <option value="seconds">Seconds</option>
+          <option value="minutes">Minutes</option>
+          <option value="hours">Hours</option>
+          <option value="days">Days</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="to-unit">To</label>
+        <select id="to-unit">
+          <option value="seconds">Seconds</option>
+          <option value="minutes" selected>Minutes</option>
+          <option value="hours">Hours</option>
+          <option value="days">Days</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="convert-btn" type="button">
+      Convert
+    </button>
+
+    <div class="result-box">
+      <p class="result-label">Result</p>
+      <p class="result-value">—</p>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
