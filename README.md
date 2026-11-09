@@ -94,6 +94,4 @@ Possible future improvements include:
 - Adding a Reset button.
 - Supporting higher precision for very small time values.
 
-My project link:
-
-[Add your GitHub Pages link here]
+My project link: https://aledjan1.github.io/Time-Converter/
